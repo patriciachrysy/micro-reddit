@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 
 - In the command line, cd in the project folder
-- Type `rails console` of `rails c` command to get in the console
+- Type `rails console` or `rails c` command to get in the console
 - Use the command to create a new user named Test: `User.create(username:'test', email:'test@testland.com', password:'test2020', pass_confirm:'test2020')`
 - Use this command to make 'Test' user create a post: `User.first.posts.create(url:'https://microverse.org', title:'Awesome bootcamp')`
 - Use the commands to create anothe user named Troll: `User.create(username:'troll', email:'troll@hateland.com', password:'troll2020', pass_confirm:'troll2020')`
