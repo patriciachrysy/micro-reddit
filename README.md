@@ -36,12 +36,12 @@ To get a local copy up and running follow these simple example steps.
 - Install Ruby on rails 5.1.6 or later if you don't have it yet
 - Run this command on your terminal in order to install rubocop: gem install rubocop 
 
-### Run tests
+### Usage
 
 - In the command line, cd in the project folder
 - Type `rails console` of `rails c` command to get in the console
 - Use the command to create a new user named Test: `User.create(username:'test', email:'test@testland.com', password:'test2020', pass_confirm:'test2020')`
-- Use this command to make 'Test' user create a post: `User.first.create(url:'https://microverse.org', title:'Awesome bootcamp')`
+- Use this command to make 'Test' user create a post: `User.first.posts.create(url:'https://microverse.org', title:'Awesome bootcamp')`
 - Use the commands to create anothe user named Troll: `User.create(username:'troll', email:'troll@hateland.com', password:'troll2020', pass_confirm:'troll2020')`
 - Use this command to make 'Troll' user post a hate comment on 'Test' user's post: `User.first.posts.first.comments.create(body:'This is a stupid post, should be deleted!')`
 
